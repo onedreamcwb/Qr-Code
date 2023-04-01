@@ -1,0 +1,56 @@
+/*importando a fonte 'Outfit' do Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/*definindo variáveis CSS globais com valores em hsl*/
+
+:root {
+    --color-card: hsl(0, 0%, 100%);  /* cor de fundo do cartão*/
+    --color-title: hsl(218, 44%, 22%);  /*cor do título*/
+    --background: hsl(212, 45%, 89%);  /*cor de fundo da página*/
+    --color-paragraph: hsl(220, 15%, 55%);  /*cor do parágrafo*/
+}
+
+/*resetando as margens e paddings de todos os elementos*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* definindo as propriedades da página*/
+body {
+    font-family: 'Outfit';  /*definindo a fonte 'Outfit' como padrão*/
+    background-color: var(--background);  /*usando a variável global de cor de fundo da página*/
+    min-height: 100vh;  /*definindo a altura mínima da página como 100% da viewport*/
+    display: flex;  /*tornando o contêiner principal um flex container*/
+    align-items: center;  /*centralizando verticalmente os itens do contêiner*/
+    font-size: 15px;  /*definindo o tamanho da fonte*/
+}
+
+/*definindo o contêiner principal*/
+.container {
+    max-width: 350px;  /*definindo a largura máxima do contêiner*/
+    margin: 0 auto;  /*centralizando horizontalmente o contêiner*/
+}
+
+/*definindo o cartão que contém as informações principais*/
+.card {
+    background-color: var(--color-card);  /*usando a variável global de cor de fundo do cartão*/
+    padding: 18px;  /*adicionando um espaçamento interno*/
+    border-radius: 17px;  /*arredondando os cantos*/
+    text-align: center;  /*centralizando o conteúdo*/
+    margin: 0 1rem;  /*adicionando margens laterais*/
+}
+.card img {
+    width: 100%;  /*definindo a largura da imagem como 100% do contêiner*/
+    border-radius: 12px;  /*arredondando os cantos da imagem*/
+}
+.text {
+    padding: 52px 10px;  /*adicionando um espaçamento interno maior*/
+}
+.text h2 {
+    color: var(--color-title);  /*usando a variável global de cor do título*/
+    padding-bottom: 16px;  /*adicionando uma margem inferior ao título*/
+}
+.text p {
+    color: var(--color-paragraph);  /*usando uma cor de parágrafo padrão*/
+}
